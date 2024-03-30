@@ -1,0 +1,106 @@
+// *header
+.header_top{
+    max-width: 100%;
+    min-height: 50px;
+    background-color: var(--accent-color);
+}
+.header_top_container{
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+}
+.address_clinic{
+    display: flex;
+    column-gap: 18px;
+    .address_clinic_text{
+        font-size: 14px;
+        color: var(--second-color);
+    }
+}
+.phone_email{
+    display: flex;
+    column-gap: 40px;
+    margin-left: auto;
+    .phone,.email{
+        display: flex;
+        column-gap: 10px;
+        color: var(--second-color);
+    }
+}
+.header_top_social_icons{
+    display: flex;
+    column-gap: 31px;
+    margin-left: 55px;
+}
+.burger_menu,
+.mobile_menu{
+    display: none;
+}
+
+.header_main{
+    max-width: 100%;
+    min-height: 95px;
+    background-color: var(--second-color);
+}
+.header_main_container{
+    min-height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link_logo_header{
+    display: flex;
+    column-gap: 6px;
+    color: var(--main-color);
+    .logo_image{
+        display: block;
+        width: 43px;
+        height: 44px;
+    }
+    .name_clinic{
+        font-size: 18px;
+    }
+    span{
+        position: relative;
+        display: block;
+        text-align: right;
+        font-weight: 300;
+        font-size: 14px;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 55px;
+            height: 1px;
+            background-color: var(--accent-color);
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.menu_list{
+    display: flex;
+    column-gap: 39px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    .menu_link{
+        font-size: 18px;
+        color: var(--main-color);
+        transition: color 200ms ease-in;
+        &:hover{
+            transition: color 200ms ease-in;
+            color: var(--accent-color);
+        }
+    }
+}
+.consultation_button{
+    width: 208px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: #f86d6d;
+    font-size: 14px;
+    color: var(--second-color);
+    text-align: center;
+}

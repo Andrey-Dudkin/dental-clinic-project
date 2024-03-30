@@ -1,0 +1,284 @@
+@media(max-width: 1181px){
+    .prices_decoration,
+    .make_an_appointment_decoration{
+        display: none;
+    }
+}
+@media(max-width: 1024px){
+      /* *header top */
+      .phone_email,
+      .header_top_social_icons{
+        display: none;
+    }
+    /* *burger menu */
+    .burger_menu{
+        display: block;
+        margin-left: auto;
+        width: 25px;
+        height: 25px;
+        background-color: var(--button-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .burger_menu_btn{
+        width: 11px;
+        min-height: 15px;
+        position: relative; 
+    }
+    .burger_menu_icon{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--second-color);
+        transition: 300ms ease-in;
+    }
+    .burger_menu_icon::before,
+    .burger_menu_icon::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--second-color);
+        position: absolute;
+        transition: 300ms ease-in;
+    }
+    .burger_menu_icon::before{
+        top: 0px;
+    }
+    .burger_menu_icon::after{
+        bottom: 0px;
+    }
+    
+    /* *mobile menu */
+    .mobile_menu{
+        display: block;
+        width: 100%;
+        min-height: 615px;
+        background-color: #0e6eaa;
+        position: absolute;
+        top: -800px;
+        left: 0;
+        z-index: 5;
+        transition: position 1s ease;
+    }
+    .mobile_menu_top_container{
+        border-bottom: 1px solid rgba(217, 214, 214, 0.56);
+        margin-bottom: 31px;
+    }
+    .mobile_menu_top_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .menu_text{
+        font-weight: 400;
+        font-size: 22px;
+        color: var(--second-color);
+    }
+    .mobile_menu_main_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .phone_email_mobile{
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        margin-bottom: 33px;
+    }
+    .header_top_social_icons_mobile{
+        display: flex;
+        column-gap: 31px;
+        margin-bottom: 42px; 
+    }
+    .menu_mobile .menu_list{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 34px;
+        text-align: center;  
+    }
+    .menu_mobile .menu_link{
+        font-size: 18px;
+        color: var(--second-color);
+    }
+    .open_menu{
+        position: absolute;
+        top: 0;
+    } 
+    /* *header main */
+    .menu{
+        display: none;
+    }
+
+    /* *first screen */
+    .first_screen_container {
+        flex-wrap: wrap;
+        row-gap: 33px;
+        justify-content: center;
+    }
+    .first_screen_text{
+        padding-top: 44px;
+    }
+    .first_screen_text .first_screen_name_clinic::before{
+        display: none;
+    }
+    .first_screen_button{
+        width: 285px;
+        height: 65px;
+        position: absolute;
+        left: 50%;
+        bottom: 80px;
+        transform: translateX(-50%);
+    }
+    .first_screen_image{
+        position: static;
+    }
+
+    /* *footer */
+    .footer_container{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 76px;
+    }
+    .footer_contact_imfo{
+        order: 1;
+    }
+    .footer_social_icons {
+        justify-content: center;
+    }
+    .footer_Info{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 54px;
+        text-align: center;
+    }
+    .footer_contact_imfo_border_right{
+        width: 100%;
+        top: auto;
+        left: 0;
+        bottom: 530px;
+        transform: rotate(0deg);
+    }
+    .footer_contact_imfo_border_bottom{
+        width: 100%;
+        height: 1px;
+        background-color: rgba(180, 180, 180, 0.35);
+        position: absolute;
+        bottom: 20px;
+    }
+}
+@media(max-width: 770px){
+    /* *about clinic */
+    .about_clinic {
+        padding-top: 48px;
+        padding-bottom: 59px;
+    }
+    .about_clinic_image{
+        flex-basis: 100%;
+    }
+    .services .services_list .services_item{
+        width: 140px;
+        font-size: 14px;
+    }
+
+    /* *advantages */
+    .advantages {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    /* *our specialists */
+    .our_specialists {
+        padding-top: 48px;
+        padding-bottom: 30px;
+    }
+
+    /* *prices */
+    .prices{
+        padding-top: 31px;
+        padding-bottom: 34px;
+    }
+    .prices_block{
+        padding-top: 24px;
+        padding-bottom: 39px;
+    }
+    .prices_description{
+        font-size: 7px;
+        margin-bottom: 32px;
+    }
+    .prices_content{
+        padding: 0 25px;
+    }
+
+    /* *reviews */
+    .reviews{
+        padding: 47px 0;
+    }
+
+    /* *make an appointment */
+    .make_an_appointment{
+        padding-top: 46px;
+        padding-bottom: 70px;
+    }
+
+    /* *news */
+    .news{
+        padding-top: 39px;
+        padding-bottom: 61px;
+    }
+    .news_card {
+        min-height: 360px;
+    }
+    .card_content .card_title {
+        font-size: 16px;
+    }
+
+    /* *footer */
+    .footer_container {
+        padding-top: 41px;
+        margin-bottom: 14px;
+    }
+    .footer_contact_imfo{
+        min-height: 303px;
+    }
+    .footer_contact_imfo_border_right{
+        bottom: 404px;
+    }
+}
+@media(max-width: 551px){
+    /* *header main */
+    .consultation_button {
+        width: 108px;
+        height: 27px;
+        font-size: 7px;
+    }
+    /* *our specialists */
+    .our_specialists_cards{
+        justify-content: center;
+        column-gap: 20px;
+    }
+    .our_specialists_card .doctor_name {
+        font-weight: 700;
+        font-size: 9px;
+        margin-top: 11px;
+        margin-bottom: 7px;
+        margin-left: 13px;
+    }
+    .our_specialists_card .doctor_position {
+        font-size: 7px;
+        margin-left: 13px;
+        margin-bottom: 0;
+    }
+
+    /* *reviews */
+    .review_text .review_description{
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+    .contact_info_user .name_user {
+        font-size: 16px;
+    }
+}

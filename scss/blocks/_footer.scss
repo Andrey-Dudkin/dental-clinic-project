@@ -1,0 +1,104 @@
+//*footer
+.footer{
+    position: relative;
+    max-width: 100%;
+    min-height: 200px;
+    background-color: #10406f;
+    padding-bottom: 37px;
+    overflow: hidden;
+
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 66px;
+    margin-bottom: 99px;
+}
+
+.footer_contact_imfo {
+    max-width: 172px;
+    min-height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.link_logo_footer{
+    display: flex;
+    column-gap: 6px;
+    color: var(--second-color);
+    span{
+        position: relative;
+        display: block;
+        text-align: right;
+        font-weight: 300;
+        font-size: 14px;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 40px;
+            height: 1px;
+            background-color: var(--second-color);
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateX(-50%);
+        }
+    }
+}
+.address_phone_email{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+.phone,.email{
+    display: flex;
+    column-gap: 10px;
+    color: var(--second-color);
+}
+
+.footer_social_icons{
+    display: flex;
+    column-gap: 31px;
+}
+.footer_Info{
+    display: flex;
+    column-gap: 84px;
+    .footer_Info_title{
+        font-weight: 600;
+        font-size: 24px;
+        color: var(--second-color);
+        margin-bottom: 33px;
+    }
+    .footer_Info_list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        .footer_Info_item{
+            font-size: 16px;
+            color: #e0e0e0;
+        }
+    }
+}
+.copywriting{
+    font-weight: 300;
+    font-size: 16px;
+    color: #c3c3c3;
+    text-align: center;
+}
+.footer_contact_imfo_border_right {
+    width: 568px;
+    height: 1px;
+    background-color: rgba(180, 180, 180, 0.35);
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 268px;
+    left: 150px;
+}
+.footer_contact_imfo_border_bottom {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(180, 180, 180, 0.35);
+    position: absolute;
+    bottom: 112px;
+}
